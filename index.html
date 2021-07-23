@@ -22,6 +22,26 @@
       padding: 20px;
   }
 
+  .toptitle{
+      background-color: darkolivegreen;
+      text-align: center;
+      font-size: 22px;
+      color: cornflowerblue;
+      border: 3px greenyellow;
+      margin: 26px;
+      padding: 26px;
+  }
+
+  .sumtxt{
+      background-color: yellowgreen;
+      text-align: center;
+      font-size: 17px;
+      color: cornflowerblue;
+      border: 3px greenyellow;
+      margin: 4px;
+      padding: 4px;
+  }
+
   
     h1 {text-align: center;}
     h2 {text-align: center;}
@@ -31,23 +51,26 @@
 
  <body>
   <p id= "gradient1">  * </p>
-  <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
-
-  <h1 style="color: Pink">welcome to <span style="border: 1px solid black">dunny</span>.tech</h1>
+  <div class="toptitle"><h1 style="color: Pink">welcome to <span style="border: 1px solid black">dunny</span>.tech</h1></div>
   <h3>
       <div class="link"><a href = "mailto: jordan@dunny.tech">Email Me: <br>jordan@dunny.tech</a></div>
-
+      <div class="link"><button type="button" onclick="myFunction()">Flip or Flop!</button></div>
+      <div class="sumtxt"><p id="here">flip</p> </div>
       <div class="link"><a href = "https://mail.hover.com/?_task=mail&_mbox=INBOX" target="_blank"><br>Login your dunny.tech <br>Email</a></div>
       <div class="link"><a href="https://github.com/the-dunny"><br><br>Visit my github</a></div>
       <div class="link"><a href="https://24.7.224.238:8006"><br><br>Visit proxmox site</a></div>
       <div class="link"><a href="../content/resume.pdf" download><br><br>Download my resume</a></div>
-      <iframe src="https://24.7.224.238:8006" style="height: 450px; width: 100%" title="ProxMox"></iframe>
+      <iframe src="https://24.7.224.238:8006" style="height: 580px; width: 100%" title="ProxMox"></iframe>
   </h3>
-
-  <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
-
-
   <p id= "gradient2"> * </p>
-
+  <script>
+      function myFunction(){
+          if(document.getElementById("here").innerText.toString().endsWith("op")){
+              document.getElementById("here").innerText = "Flip";
+          }else{
+              document.getElementById("here").innerText = "Flop";
+          }
+      }
+  </script>
  </body>
 </html>
