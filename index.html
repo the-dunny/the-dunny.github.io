@@ -51,8 +51,9 @@
 
  <body>
   <p id= "gradient1">  * </p>
-  <div class="toptitle"><h1 style="color: Pink">welcome to <span style="border: 1px solid black">dunny</span>.tech</h1></div>
+  <div class="toptitle"><h1 style="color: Pink">welcome to <span onmouseover="hi()">dunny</span>.tech</h1></div>
   <h3>
+      <div class="sumtxt"><p id="appear">hi</p></div>
       <div class="link"><a href = "mailto: jordan@dunny.tech">Email Me: <br>jordan@dunny.tech</a></div>
       <div class="link"><button type="button" onclick="myFunction()">Flip or Flop!</button></div>
       <div class="sumtxt"><p id="here">Flip</p></div>
@@ -72,5 +73,10 @@
           }
       }
   </script>
+ <script>
+     function hi(){
+         document.getElementById("appear").innerHTML = "Thanks for stopping by!"
+     }
+ </script>
  </body>
 </html>
