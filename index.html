@@ -3,17 +3,20 @@
 
  <head>
   <style>
-  #gradient1 {
-    height: 100px;
-    background-color: #ccccccc;
-    background-image: linear-gradient(blue, green);
-  }
-  #gradient2 {
-    height: 100px;
-    background-color: #ccccccc;
-    background-image: linear-gradient(green, blue);
-  }
   .link{
+         background-color: aquamarine;
+         text-align: left;
+         color: darkolivegreen;
+         border: 3px greenyellow;
+         margin: 2px;
+         padding: 2px;
+     }
+
+  .link:hover{
+      opacity: 75%;
+  }
+
+  .buttonlink{
       background-color: aquamarine;
       text-align: center;
       color: darkolivegreen;
@@ -22,7 +25,7 @@
       padding: 2px;
   }
 
-  .link:hover{
+  .buttonlink:hover{
       opacity: 75%;
   }
 
@@ -75,22 +78,20 @@
  </head>
 
  <body>
-  <p id= "gradient1">  * </p>
   <div class="toptitle"><h1 style="color: Pink">welcome to <span onmouseover="hi()">dunny</span>.tech</h1></div>
   <h3>
       <div class="sumtxt"><p id="appear">hi</p></div>
       <div class="link"><a href = "mailto: jordan@dunny.tech">Email Me: <br>jordan@dunny.tech</a></div>
-      <div class="link"><button type="button" onclick="myFunction()">Flip or Flop!</button></div>
-      <div class="sumtxt"><p id="here">Flip</p></div>
       <div class="link"><a href = "https://mail.hover.com/?_task=mail&_mbox=INBOX" target="_blank"><br>Login your dunny.tech <br>Email</a></div>
       <div class="link"><a href="https://github.com/the-dunny"><br><br>Visit my github</a></div>
       <div class="link"><a href="https://24.7.224.238:8006"><br><br>Visit proxmox site</a></div>
       <div class="link"><a href="../content/resume.pdf" download><br><br>Download my resume</a></div>
+      <div class="buttonlink"><button type="button" onclick="myFunction()" draggable="true">Flip or Flop!</button></div>
+      <div class="sumtxt"><p id="here">Flip</p></div>
       <div class="resizing">
         <iframe src="https://24.7.224.238:8006" style="height: 275px; width: 100%; max-height: 700px;" title="ProxMox"></iframe>
       </div>
   </h3>
-  <p id= "gradient2"> * </p>
   <script>
       function myFunction(){
           if(document.getElementById("here").innerText.toString().endsWith("op")){
