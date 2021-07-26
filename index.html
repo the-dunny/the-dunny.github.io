@@ -4,12 +4,12 @@
  <head>
   <style>
   #gradient1 {
-    height: 350px;
+    height: 100px;
     background-color: #ccccccc;
     background-image: linear-gradient(blue, green);
   }
   #gradient2 {
-    height: 350px;
+    height: 100px;
     background-color: #ccccccc;
     background-image: linear-gradient(green, blue);
   }
@@ -18,8 +18,12 @@
       text-align: center;
       color: darkolivegreen;
       border: 3px greenyellow;
-      margin: 20px;
-      padding: 20px;
+      margin: 2px;
+      padding: 2px;
+  }
+
+  .link:hover{
+      opacity: 75%;
   }
 
   .toptitle{
@@ -28,8 +32,20 @@
       font-size: 22px;
       color: cornflowerblue;
       border: 3px greenyellow;
-      margin: 26px;
-      padding: 26px;
+      margin: 2px;
+      padding: 2px;
+      opacity: 100%;
+  }
+
+  .toptitle:hover{
+      background-color: cornflowerblue;
+      text-align: center;
+      font-size: 22px;
+      color: cornflowerblue;
+      border: 3px greenyellow;
+      margin: 2px;
+      padding: 2px;
+      opacity: 70%;
   }
 
   .sumtxt{
@@ -38,8 +54,17 @@
       font-size: 17px;
       color: lawngreen;
       border: 3px greenyellow;
-      margin: 4px;
-      padding: 4px;
+      margin: 2px;
+      padding: 2px;
+  }
+
+  .sumtxt:hover{
+      opacity: 80%;
+  }
+
+  .resizing{
+      resize: both;
+      overflow: auto;
   }
 
   
@@ -61,7 +86,9 @@
       <div class="link"><a href="https://github.com/the-dunny"><br><br>Visit my github</a></div>
       <div class="link"><a href="https://24.7.224.238:8006"><br><br>Visit proxmox site</a></div>
       <div class="link"><a href="../content/resume.pdf" download><br><br>Download my resume</a></div>
-      <iframe src="https://24.7.224.238:8006" style="height: 580px; width: 100%" title="ProxMox"></iframe>
+      <div class="resizing">
+        <iframe src="https://24.7.224.238:8006" style="height: 275px; width: 100%; max-height: 700px;" title="ProxMox"></iframe>
+      </div>
   </h3>
   <p id= "gradient2"> * </p>
   <script>
